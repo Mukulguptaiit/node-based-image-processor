@@ -1,5 +1,3 @@
-Here is your full README.md content in Markdown format, ready to paste:
-
 # 🧠 Node-Based Image Processing Interface
 
 A modular, visual C++ application that allows users to manipulate images through a flexible **node editor**. Built using OpenGL and ImGui, this tool supports real-time image transformations such as blur, brightness adjustment, edge detection, noise generation, and more.
@@ -139,8 +137,9 @@ Effect	Description
 
 📸 Screenshots
 
-(Add screenshots of your app showing the node graph with various effects applied)
+### Node Editor Interface
 
+![Node Graph View](screenshot.png)
 ⸻
 
 💡 Contribution
