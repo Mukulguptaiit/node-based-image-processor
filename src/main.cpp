@@ -1,4 +1,4 @@
-#include <glad/glad.h> // OpenGL loader
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <vector>
@@ -11,6 +11,7 @@
 
 #include "nodes/ImageInputNode.hpp"
 #include "nodes/OutputNode.hpp"
+#include "nodes/BrightnessNode.hpp" // 👈 Include brightness node
 
 // 🔁 Link tracking
 static int currentLinkId = 100;
@@ -50,8 +51,9 @@ int main() {
     ImGui_ImplOpenGL3_Init("#version 330");
     ImGui::StyleColorsDark();
 
-    // 🔁 Nodes (persist across frames)
+    // 🔁 Node objects
     static ImageInputNode inputNode(1, "Image Input");
+    static BrightnessNode brightnessNode(3, "Brightness"); // 👈 Added here
     static OutputNode outputNode(2, "Output Node");
 
     // 🌀 Main loop
@@ -67,30 +69,37 @@ int main() {
 
         ImNodes::BeginNodeEditor();
 
-        // 🎨 Draw nodes
+        // 🎨 Draw UI for all nodes
         inputNode.drawUI();
         inputNode.process();
+
+        brightnessNode.drawUI();
+        brightnessNode.process();
+
         outputNode.drawUI();
         outputNode.process();
-        
-        // 🔌 Draw existing links + connect logic
+
+        // 🔗 Draw links
         for (const auto& [linkId, from, to] : links) {
             ImNodes::Link(linkId, from, to);
-        
-            if (from == inputNode.getOutputAttrId() && to == outputNode.getInputAttrId()) {
-                outputNode.setInput(inputNode.getOutput());
+
+            if (from == inputNode.getOutputAttrId() && to == brightnessNode.getInputAttrId()) {
+                brightnessNode.setInput(inputNode.getOutput());
+            }
+
+            if (from == brightnessNode.getOutputAttrId() && to == outputNode.getInputAttrId()) {
+                outputNode.setInput(brightnessNode.getOutput());
             }
         }
-        
-        ImNodes::EndNodeEditor();  // ✅ First close the editor scope
-        
-        // ✅ Now it is safe to call this
+
+        ImNodes::EndNodeEditor(); // ✅ scope close before IsLinkCreated
+
+        // 📌 New connections
         int fromAttr, toAttr;
         if (ImNodes::IsLinkCreated(&fromAttr, &toAttr)) {
             links.emplace_back(currentLinkId++, fromAttr, toAttr);
         }
-        
-        
+
         ImGui::End();
 
         // 🖼️ Render

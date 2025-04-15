@@ -336,6 +336,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/nodes/BrightnessNode.o: src/nodes/BrightnessNode.cpp.o
+.PHONY : src/nodes/BrightnessNode.o
+
+# target to build an object file
+src/nodes/BrightnessNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o
+.PHONY : src/nodes/BrightnessNode.cpp.o
+
+src/nodes/BrightnessNode.i: src/nodes/BrightnessNode.cpp.i
+.PHONY : src/nodes/BrightnessNode.i
+
+# target to preprocess a source file
+src/nodes/BrightnessNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.i
+.PHONY : src/nodes/BrightnessNode.cpp.i
+
+src/nodes/BrightnessNode.s: src/nodes/BrightnessNode.cpp.s
+.PHONY : src/nodes/BrightnessNode.s
+
+# target to generate assembly for a file
+src/nodes/BrightnessNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.s
+.PHONY : src/nodes/BrightnessNode.cpp.s
+
 src/nodes/ImageInputNode.o: src/nodes/ImageInputNode.cpp.o
 .PHONY : src/nodes/ImageInputNode.o
 
@@ -441,6 +465,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/nodes/BrightnessNode.o"
+	@echo "... src/nodes/BrightnessNode.i"
+	@echo "... src/nodes/BrightnessNode.s"
 	@echo "... src/nodes/ImageInputNode.o"
 	@echo "... src/nodes/ImageInputNode.i"
 	@echo "... src/nodes/ImageInputNode.s"
