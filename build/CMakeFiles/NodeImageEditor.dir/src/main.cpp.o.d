@@ -935,5 +935,4 @@ CMakeFiles/NodeImageEditor.dir/src/main.cpp.o: \
   /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/video/tracking.hpp \
   /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4/opencv2/video/background_segm.hpp \
   /Users/mukulgupta/Documents/GitHub/node-based-image-processor/include/nodes/OutputNode.hpp \
-  /Users/mukulgupta/Documents/GitHub/node-based-image-processor/include/nodes/BrightnessNode.hpp \
   /Users/mukulgupta/Documents/GitHub/node-based-image-processor/include/nodes/ImageEffectNode.hpp

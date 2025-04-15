@@ -9,9 +9,8 @@ ImageEffectNode::ImageEffectNode(int nodeId, const std::string& name) {
     this->name = name;
 }
 
-void ImageEffectNode::setInput(const cv::Mat& input) {
-    if (!input.empty())
-        inputImage = input.clone();
+void ImageEffectNode::setInput(const cv::Mat& image) {
+    inputImage = image.clone();
 }
 
 cv::Mat ImageEffectNode::getOutput() {
@@ -28,14 +27,9 @@ void ImageEffectNode::process() {
             temp.convertTo(outputImage, -1, 1, brightness);
             break;
 
-        case EFFECT_BLUR: {
-            int ksize = blurRadius * 2 + 1;
-            if (directional)
-                cv::GaussianBlur(temp, outputImage, vertical ? cv::Size(1, ksize) : cv::Size(ksize, 1), 0);
-            else
-                cv::GaussianBlur(temp, outputImage, cv::Size(ksize, ksize), 0);
+        case EFFECT_BLUR:
+            cv::GaussianBlur(temp, outputImage, cv::Size(blurRadius * 2 + 1, blurRadius * 2 + 1), 0);
             break;
-        }
 
         case EFFECT_GRAYSCALE:
             cv::cvtColor(temp, outputImage, cv::COLOR_RGB2GRAY);
@@ -43,8 +37,32 @@ void ImageEffectNode::process() {
             break;
 
         case EFFECT_INVERT:
-            outputImage = cv::Scalar::all(255) - temp;
+            cv::bitwise_not(temp, outputImage);
             break;
+
+        case EFFECT_EDGE:
+            if (edgeUseCanny) {
+                cv::Mat gray;
+                cv::cvtColor(temp, gray, cv::COLOR_RGB2GRAY);
+                cv::Canny(gray, gray, cannyThreshold1, cannyThreshold2);
+                cv::cvtColor(gray, outputImage, cv::COLOR_GRAY2RGB);
+            } else {
+                cv::Mat gray, grad_x, grad_y, abs_grad_x, abs_grad_y;
+                cv::cvtColor(temp, gray, cv::COLOR_RGB2GRAY);
+                cv::Sobel(gray, grad_x, CV_16S, 1, 0, sobelKernelSize);
+                cv::Sobel(gray, grad_y, CV_16S, 0, 1, sobelKernelSize);
+                cv::convertScaleAbs(grad_x, abs_grad_x);
+                cv::convertScaleAbs(grad_y, abs_grad_y);
+                cv::addWeighted(abs_grad_x, 0.5, abs_grad_y, 0.5, 0, gray);
+                cv::cvtColor(gray, outputImage, cv::COLOR_GRAY2RGB);
+            }
+            break;
+
+        case EFFECT_CUSTOM_KERNEL: {
+            cv::Mat kernel(3, 3, CV_32F, customKernel);
+            cv::filter2D(temp, outputImage, -1, kernel);
+            break;
+        }
     }
 
     updateTexture();
@@ -69,7 +87,6 @@ void ImageEffectNode::updateTexture() {
 
 void ImageEffectNode::drawUI() {
     ImNodes::BeginNode(id);
-
     ImNodes::BeginNodeTitleBar();
     ImGui::TextUnformatted(name.c_str());
     ImNodes::EndNodeTitleBar();
@@ -82,14 +99,43 @@ void ImageEffectNode::drawUI() {
     ImGui::Text("Image Out");
     ImNodes::EndOutputAttribute();
 
+    const char* effectNames[] = {
+        "Brightness", "Blur", "Grayscale", "Invert", "Edge Detect", "Custom Kernel"
+    };
+
     ImGui::Combo("Effect", &currentEffect, effectNames, IM_ARRAYSIZE(effectNames));
 
-    if (currentEffect == EFFECT_BRIGHTNESS) {
-        ImGui::SliderInt("Brightness", &brightness, -100, 100);
-    } else if (currentEffect == EFFECT_BLUR) {
-        ImGui::SliderInt("Radius", &blurRadius, 1, 20);
-        ImGui::Checkbox("Directional", &directional);
-        if (directional) ImGui::Checkbox("Vertical", &vertical);
+    switch (currentEffect) {
+        case EFFECT_BRIGHTNESS:
+            ImGui::SliderInt("Brightness", &brightness, -100, 100);
+            break;
+
+        case EFFECT_BLUR:
+            ImGui::SliderInt("Radius", &blurRadius, 1, 20);
+            break;
+
+        case EFFECT_EDGE:
+            ImGui::Checkbox("Use Canny", &edgeUseCanny);
+            if (edgeUseCanny) {
+                ImGui::SliderInt("Threshold 1", &cannyThreshold1, 0, 255);
+                ImGui::SliderInt("Threshold 2", &cannyThreshold2, 0, 255);
+            } else {
+                ImGui::SliderInt("Sobel Kernel", &sobelKernelSize, 1, 7);
+                if (sobelKernelSize % 2 == 0) sobelKernelSize += 1;
+            }
+            break;
+
+        case EFFECT_CUSTOM_KERNEL:
+            ImGui::Text("Custom 3x3 Kernel:");
+            for (int i = 0; i < 3; ++i) {
+                for (int j = 0; j < 3; ++j) {
+                    ImGui::PushID(i * 3 + j);
+                    ImGui::InputFloat("##kernel", &customKernel[i][j], 0.1f, 1.0f, "%.2f");
+                    ImGui::PopID();
+                    if (j < 2) ImGui::SameLine();
+                }
+            }
+            break;
     }
 
     if (!outputImage.empty()) {
