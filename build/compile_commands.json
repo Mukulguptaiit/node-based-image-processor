@@ -1,0 +1,50 @@
+[
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp",
+  "output": "CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -g -std=gnu++17 -arch arm64 -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -g -std=gnu++17 -arch arm64 -o CMakeFiles/NodeImageEditor.dir/src/main.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/main.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/main.cpp",
+  "output": "CMakeFiles/NodeImageEditor.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes",
+  "command": "/usr/bin/clang++  -I/opt/homebrew/Cellar/opencv/4.11.0_1/include/opencv4 -I/opt/homebrew/Cellar/glfw/3.4/include -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui -I/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends -I/opt/homebrew/include -g -std=gnu++11 -arch arm64 -Wall -Wextra -Wpedantic -Werror -o CMakeFiles/imnodes.dir/imnodes.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp",
+  "file": "/Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp",
+  "output": "external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o"
+}
+]

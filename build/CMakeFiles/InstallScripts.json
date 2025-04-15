@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/cmake_install.cmake",
+		"/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
