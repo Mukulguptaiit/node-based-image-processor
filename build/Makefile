@@ -336,6 +336,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/nodes/BlurNode.o: src/nodes/BlurNode.cpp.o
+.PHONY : src/nodes/BlurNode.o
+
+# target to build an object file
+src/nodes/BlurNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o
+.PHONY : src/nodes/BlurNode.cpp.o
+
+src/nodes/BlurNode.i: src/nodes/BlurNode.cpp.i
+.PHONY : src/nodes/BlurNode.i
+
+# target to preprocess a source file
+src/nodes/BlurNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.i
+.PHONY : src/nodes/BlurNode.cpp.i
+
+src/nodes/BlurNode.s: src/nodes/BlurNode.cpp.s
+.PHONY : src/nodes/BlurNode.s
+
+# target to generate assembly for a file
+src/nodes/BlurNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.s
+.PHONY : src/nodes/BlurNode.cpp.s
+
 src/nodes/BrightnessNode.o: src/nodes/BrightnessNode.cpp.o
 .PHONY : src/nodes/BrightnessNode.o
 
@@ -359,6 +383,54 @@ src/nodes/BrightnessNode.s: src/nodes/BrightnessNode.cpp.s
 src/nodes/BrightnessNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.s
 .PHONY : src/nodes/BrightnessNode.cpp.s
+
+src/nodes/EdgeDetectionNode.o: src/nodes/EdgeDetectionNode.cpp.o
+.PHONY : src/nodes/EdgeDetectionNode.o
+
+# target to build an object file
+src/nodes/EdgeDetectionNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o
+.PHONY : src/nodes/EdgeDetectionNode.cpp.o
+
+src/nodes/EdgeDetectionNode.i: src/nodes/EdgeDetectionNode.cpp.i
+.PHONY : src/nodes/EdgeDetectionNode.i
+
+# target to preprocess a source file
+src/nodes/EdgeDetectionNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.i
+.PHONY : src/nodes/EdgeDetectionNode.cpp.i
+
+src/nodes/EdgeDetectionNode.s: src/nodes/EdgeDetectionNode.cpp.s
+.PHONY : src/nodes/EdgeDetectionNode.s
+
+# target to generate assembly for a file
+src/nodes/EdgeDetectionNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.s
+.PHONY : src/nodes/EdgeDetectionNode.cpp.s
+
+src/nodes/ImageEffectNode.o: src/nodes/ImageEffectNode.cpp.o
+.PHONY : src/nodes/ImageEffectNode.o
+
+# target to build an object file
+src/nodes/ImageEffectNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o
+.PHONY : src/nodes/ImageEffectNode.cpp.o
+
+src/nodes/ImageEffectNode.i: src/nodes/ImageEffectNode.cpp.i
+.PHONY : src/nodes/ImageEffectNode.i
+
+# target to preprocess a source file
+src/nodes/ImageEffectNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.i
+.PHONY : src/nodes/ImageEffectNode.cpp.i
+
+src/nodes/ImageEffectNode.s: src/nodes/ImageEffectNode.cpp.s
+.PHONY : src/nodes/ImageEffectNode.s
+
+# target to generate assembly for a file
+src/nodes/ImageEffectNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.s
+.PHONY : src/nodes/ImageEffectNode.cpp.s
 
 src/nodes/ImageInputNode.o: src/nodes/ImageInputNode.cpp.o
 .PHONY : src/nodes/ImageInputNode.o
@@ -407,6 +479,30 @@ src/nodes/OutputNode.s: src/nodes/OutputNode.cpp.s
 src/nodes/OutputNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.s
 .PHONY : src/nodes/OutputNode.cpp.s
+
+src/nodes/ThresholdNode.o: src/nodes/ThresholdNode.cpp.o
+.PHONY : src/nodes/ThresholdNode.o
+
+# target to build an object file
+src/nodes/ThresholdNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o
+.PHONY : src/nodes/ThresholdNode.cpp.o
+
+src/nodes/ThresholdNode.i: src/nodes/ThresholdNode.cpp.i
+.PHONY : src/nodes/ThresholdNode.i
+
+# target to preprocess a source file
+src/nodes/ThresholdNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.i
+.PHONY : src/nodes/ThresholdNode.cpp.i
+
+src/nodes/ThresholdNode.s: src/nodes/ThresholdNode.cpp.s
+.PHONY : src/nodes/ThresholdNode.s
+
+# target to generate assembly for a file
+src/nodes/ThresholdNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.s
+.PHONY : src/nodes/ThresholdNode.cpp.s
 
 src/utils/glad.o: src/utils/glad.c.o
 .PHONY : src/utils/glad.o
@@ -465,15 +561,27 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/nodes/BlurNode.o"
+	@echo "... src/nodes/BlurNode.i"
+	@echo "... src/nodes/BlurNode.s"
 	@echo "... src/nodes/BrightnessNode.o"
 	@echo "... src/nodes/BrightnessNode.i"
 	@echo "... src/nodes/BrightnessNode.s"
+	@echo "... src/nodes/EdgeDetectionNode.o"
+	@echo "... src/nodes/EdgeDetectionNode.i"
+	@echo "... src/nodes/EdgeDetectionNode.s"
+	@echo "... src/nodes/ImageEffectNode.o"
+	@echo "... src/nodes/ImageEffectNode.i"
+	@echo "... src/nodes/ImageEffectNode.s"
 	@echo "... src/nodes/ImageInputNode.o"
 	@echo "... src/nodes/ImageInputNode.i"
 	@echo "... src/nodes/ImageInputNode.s"
 	@echo "... src/nodes/OutputNode.o"
 	@echo "... src/nodes/OutputNode.i"
 	@echo "... src/nodes/OutputNode.s"
+	@echo "... src/nodes/ThresholdNode.o"
+	@echo "... src/nodes/ThresholdNode.i"
+	@echo "... src/nodes/ThresholdNode.s"
 	@echo "... src/utils/glad.o"
 	@echo "... src/utils/glad.i"
 	@echo "... src/utils/glad.s"

@@ -86,10 +86,24 @@ CMakeFiles/NodeImageEditor.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/main.cpp -o CMakeFiles/NodeImageEditor.dir/src/main.cpp.s
 
+CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
+CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BlurNode.cpp
+CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BlurNode.cpp
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BlurNode.cpp > CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.i
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BlurNode.cpp -o CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.s
+
 CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
 CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BrightnessNode.cpp
 CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BrightnessNode.cpp
 
 CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.i: cmake_force
@@ -100,10 +114,38 @@ CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/BrightnessNode.cpp -o CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.s
 
+CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
+CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/EdgeDetectionNode.cpp
+CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/EdgeDetectionNode.cpp
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/EdgeDetectionNode.cpp > CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.i
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/EdgeDetectionNode.cpp -o CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.s
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
+CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ImageEffectNode.cpp
+CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ImageEffectNode.cpp
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ImageEffectNode.cpp > CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.i
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ImageEffectNode.cpp -o CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.s
+
 CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
 CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ImageInputNode.cpp
 CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ImageInputNode.cpp
 
 CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.i: cmake_force
@@ -117,7 +159,7 @@ CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.s: cmake_force
 CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
 CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/OutputNode.cpp
 CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/OutputNode.cpp
 
 CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.i: cmake_force
@@ -128,20 +170,42 @@ CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/OutputNode.cpp -o CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.s
 
+CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o: CMakeFiles/NodeImageEditor.dir/flags.make
+CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ThresholdNode.cpp
+CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o: CMakeFiles/NodeImageEditor.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o -MF CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o.d -o CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ThresholdNode.cpp
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ThresholdNode.cpp > CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.i
+
+CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/nodes/ThresholdNode.cpp -o CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.s
+
 # Object files for target NodeImageEditor
 NodeImageEditor_OBJECTS = \
 "CMakeFiles/NodeImageEditor.dir/src/main.cpp.o" \
+"CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o" \
 "CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o" \
+"CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o" \
+"CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o" \
 "CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o" \
-"CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o"
+"CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o" \
+"CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o"
 
 # External object files for target NodeImageEditor
 NodeImageEditor_EXTERNAL_OBJECTS =
 
 NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/main.cpp.o
+NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/BlurNode.cpp.o
 NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/BrightnessNode.cpp.o
+NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/EdgeDetectionNode.cpp.o
+NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/ImageEffectNode.cpp.o
 NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o
 NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o
+NodeImageEditor: CMakeFiles/NodeImageEditor.dir/src/nodes/ThresholdNode.cpp.o
 NodeImageEditor: CMakeFiles/NodeImageEditor.dir/build.make
 NodeImageEditor: libglad.a
 NodeImageEditor: libimgui.a
@@ -204,7 +268,7 @@ NodeImageEditor: /opt/homebrew/Cellar/opencv/4.11.0_1/lib/libopencv_photo.4.11.0
 NodeImageEditor: /opt/homebrew/Cellar/opencv/4.11.0_1/lib/libopencv_imgproc.4.11.0.dylib
 NodeImageEditor: /opt/homebrew/Cellar/opencv/4.11.0_1/lib/libopencv_core.4.11.0.dylib
 NodeImageEditor: CMakeFiles/NodeImageEditor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable NodeImageEditor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable NodeImageEditor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NodeImageEditor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
