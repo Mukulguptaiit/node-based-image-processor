@@ -76,15 +76,15 @@ CMakeFiles/glad.dir/src/utils/glad.c.o: CMakeFiles/glad.dir/flags.make
 CMakeFiles/glad.dir/src/utils/glad.c.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c
 CMakeFiles/glad.dir/src/utils/glad.c.o: CMakeFiles/glad.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/glad.dir/src/utils/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/src/utils/glad.c.o -MF CMakeFiles/glad.dir/src/utils/glad.c.o.d -o CMakeFiles/glad.dir/src/utils/glad.c.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/glad.dir/src/utils/glad.c.o -MF CMakeFiles/glad.dir/src/utils/glad.c.o.d -o CMakeFiles/glad.dir/src/utils/glad.c.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c
 
 CMakeFiles/glad.dir/src/utils/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/glad.dir/src/utils/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c > CMakeFiles/glad.dir/src/utils/glad.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c > CMakeFiles/glad.dir/src/utils/glad.c.i
 
 CMakeFiles/glad.dir/src/utils/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/glad.dir/src/utils/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c -o CMakeFiles/glad.dir/src/utils/glad.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/src/utils/glad.c -o CMakeFiles/glad.dir/src/utils/glad.c.s
 
 # Object files for target glad
 glad_OBJECTS = \

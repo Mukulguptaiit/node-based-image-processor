@@ -336,6 +336,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/nodes/ImageInputNode.o: src/nodes/ImageInputNode.cpp.o
+.PHONY : src/nodes/ImageInputNode.o
+
+# target to build an object file
+src/nodes/ImageInputNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.o
+.PHONY : src/nodes/ImageInputNode.cpp.o
+
+src/nodes/ImageInputNode.i: src/nodes/ImageInputNode.cpp.i
+.PHONY : src/nodes/ImageInputNode.i
+
+# target to preprocess a source file
+src/nodes/ImageInputNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.i
+.PHONY : src/nodes/ImageInputNode.cpp.i
+
+src/nodes/ImageInputNode.s: src/nodes/ImageInputNode.cpp.s
+.PHONY : src/nodes/ImageInputNode.s
+
+# target to generate assembly for a file
+src/nodes/ImageInputNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/ImageInputNode.cpp.s
+.PHONY : src/nodes/ImageInputNode.cpp.s
+
+src/nodes/OutputNode.o: src/nodes/OutputNode.cpp.o
+.PHONY : src/nodes/OutputNode.o
+
+# target to build an object file
+src/nodes/OutputNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.o
+.PHONY : src/nodes/OutputNode.cpp.o
+
+src/nodes/OutputNode.i: src/nodes/OutputNode.cpp.i
+.PHONY : src/nodes/OutputNode.i
+
+# target to preprocess a source file
+src/nodes/OutputNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.i
+.PHONY : src/nodes/OutputNode.cpp.i
+
+src/nodes/OutputNode.s: src/nodes/OutputNode.cpp.s
+.PHONY : src/nodes/OutputNode.s
+
+# target to generate assembly for a file
+src/nodes/OutputNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NodeImageEditor.dir/build.make CMakeFiles/NodeImageEditor.dir/src/nodes/OutputNode.cpp.s
+.PHONY : src/nodes/OutputNode.cpp.s
+
 src/utils/glad.o: src/utils/glad.c.o
 .PHONY : src/utils/glad.o
 
@@ -393,6 +441,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/nodes/ImageInputNode.o"
+	@echo "... src/nodes/ImageInputNode.i"
+	@echo "... src/nodes/ImageInputNode.s"
+	@echo "... src/nodes/OutputNode.o"
+	@echo "... src/nodes/OutputNode.i"
+	@echo "... src/nodes/OutputNode.s"
 	@echo "... src/utils/glad.o"
 	@echo "... src/utils/glad.i"
 	@echo "... src/utils/glad.s"

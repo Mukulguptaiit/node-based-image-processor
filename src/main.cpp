@@ -1,111 +1,114 @@
-#include <glad/glad.h>                 // for OpenGL loader (modern context)
+#include <glad/glad.h> // OpenGL loader
+#include <GLFW/glfw3.h>
 #include <iostream>
-#include <stdio.h>
-
-#include <GLFW/glfw3.h>                // window + input
-
+#include <vector>
+#include <tuple>
 
 #include "imgui.h"
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
-
 #include "imnodes.h"
 
-void setupNodeEditor() {
-    ImNodes::BeginNodeEditor();
+#include "nodes/ImageInputNode.hpp"
+#include "nodes/OutputNode.hpp"
 
-    // Dummy node
-    const int node_id = 1;
-    ImNodes::BeginNode(node_id);
-
-    ImNodes::BeginNodeTitleBar();
-    ImGui::TextUnformatted("Example Node");
-    ImNodes::EndNodeTitleBar();
-
-    ImNodes::BeginInputAttribute(2);
-    ImGui::Text("Input");
-    ImNodes::EndInputAttribute();
-
-    ImNodes::BeginOutputAttribute(3);
-    ImGui::Text("Output");
-    ImNodes::EndOutputAttribute();
-
-    ImNodes::EndNode();
-
-    ImNodes::EndNodeEditor();
-}
+// 🔁 Link tracking
+static int currentLinkId = 100;
+static std::vector<std::tuple<int, int, int>> links; // (link_id, from_attr, to_attr)
 
 int main() {
-    // Init GLFW
+    // 🔧 GLFW Init
     if (!glfwInit()) {
-        std::cerr << "Failed to initialize GLFW!\n";
+        std::cerr << "❌ Failed to init GLFW\n";
         return -1;
     }
 
-    // OpenGL 3.3 Core
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    // Create window
     GLFWwindow* window = glfwCreateWindow(1280, 720, "Node Image Editor", nullptr, nullptr);
     if (!window) {
-        std::cerr << "Failed to create GLFW window!\n";
+        std::cerr << "❌ Failed to create window\n";
         glfwTerminate();
         return -1;
     }
 
     glfwMakeContextCurrent(window);
-    glfwSwapInterval(1); // Vsync
+    glfwSwapInterval(1);
 
-    // Load OpenGL functions (glad)
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
-        std::cerr << "Failed to initialize OpenGL loader!\n";
+        std::cerr << "❌ Failed to load OpenGL via GLAD\n";
         return -1;
     }
 
-    // Setup Dear ImGui context
+    // 🧠 ImGui + ImNodes setup
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImNodes::CreateContext();
-
-    ImGuiIO& io = ImGui::GetIO(); (void)io;
-
-    ImGui::StyleColorsDark();
-
-    // Setup Platform/Renderer bindings
     ImGui_ImplGlfw_InitForOpenGL(window, true);
     ImGui_ImplOpenGL3_Init("#version 330");
+    ImGui::StyleColorsDark();
 
-    // Main loop
+    // 🔁 Nodes (persist across frames)
+    static ImageInputNode inputNode(1, "Image Input");
+    static OutputNode outputNode(2, "Output Node");
+
+    // 🌀 Main loop
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
 
+        // 🧠 Frame start
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
 
         ImGui::Begin("Node Editor");
-        setupNodeEditor();
+
+        ImNodes::BeginNodeEditor();
+
+        // 🎨 Draw nodes
+        inputNode.drawUI();
+        inputNode.process();
+        outputNode.drawUI();
+        outputNode.process();
+        
+        // 🔌 Draw existing links + connect logic
+        for (const auto& [linkId, from, to] : links) {
+            ImNodes::Link(linkId, from, to);
+        
+            if (from == inputNode.getOutputAttrId() && to == outputNode.getInputAttrId()) {
+                outputNode.setInput(inputNode.getOutput());
+            }
+        }
+        
+        ImNodes::EndNodeEditor();  // ✅ First close the editor scope
+        
+        // ✅ Now it is safe to call this
+        int fromAttr, toAttr;
+        if (ImNodes::IsLinkCreated(&fromAttr, &toAttr)) {
+            links.emplace_back(currentLinkId++, fromAttr, toAttr);
+        }
+        
+        
         ImGui::End();
 
+        // 🖼️ Render
         ImGui::Render();
-        int display_w, display_h;
-        glfwGetFramebufferSize(window, &display_w, &display_h);
-        glViewport(0, 0, display_w, display_h);
+        int w, h;
+        glfwGetFramebufferSize(window, &w, &h);
+        glViewport(0, 0, w, h);
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
-
         glfwSwapBuffers(window);
     }
 
-    // Cleanup
+    // 🧹 Cleanup
     ImGui_ImplOpenGL3_Shutdown();
     ImGui_ImplGlfw_Shutdown();
     ImNodes::DestroyContext();
     ImGui::DestroyContext();
-
     glfwDestroyWindow(window);
     glfwTerminate();
 
