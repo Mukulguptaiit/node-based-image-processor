@@ -19,6 +19,12 @@ include_directories(${GLFW_INCLUDE_DIRS})
 link_directories(${GLFW_LIBRARY_DIRS})
 
 # -------------------------------
+# 🔹 Glad (OpenGL Loader)
+# -------------------------------
+add_library(glad STATIC src/utils/glad.c)
+target_include_directories(glad PUBLIC include)
+
+# -------------------------------
 # 🔹 ImGui
 # -------------------------------
 add_library(imgui STATIC
@@ -29,7 +35,6 @@ add_library(imgui STATIC
     external/imgui/backends/imgui_impl_glfw.cpp
     external/imgui/backends/imgui_impl_opengl3.cpp
 )
-
 target_include_directories(imgui PUBLIC
     external/imgui
     external/imgui/backends
@@ -65,6 +70,7 @@ add_executable(NodeImageEditor ${SOURCES})
 # 🔹 Link All Libraries
 # -------------------------------
 target_link_libraries(NodeImageEditor PRIVATE
+    glad
     ${GLFW_LIBRARIES}
     imgui
     imnodes

@@ -76,85 +76,85 @@ CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp
 CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp
 
 CMakeFiles/imgui.dir/external/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/external/imgui/imgui.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp > CMakeFiles/imgui.dir/external/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp > CMakeFiles/imgui.dir/external/imgui/imgui.cpp.i
 
 CMakeFiles/imgui.dir/external/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/external/imgui/imgui.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui.cpp.s
 
 CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp
 CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp
 
 CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp > CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp > CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.i
 
 CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_draw.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui_draw.cpp.s
 
 CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp
 CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp
 
 CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp > CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp > CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.i
 
 CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_tables.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui_tables.cpp.s
 
 CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp
 CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp
 
 CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp > CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp > CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.i
 
 CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/imgui_widgets.cpp -o CMakeFiles/imgui.dir/external/imgui/imgui_widgets.cpp.s
 
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp
 
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp > CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.i
 
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_glfw.cpp -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_glfw.cpp.s
 
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/imgui.dir/flags.make
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/imgui.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp > CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.i
 
 CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imgui/backends/imgui_impl_opengl3.cpp -o CMakeFiles/imgui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.s
 
 # Object files for target imgui
 imgui_OBJECTS = \

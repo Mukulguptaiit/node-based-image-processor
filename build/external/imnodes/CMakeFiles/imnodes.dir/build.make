@@ -76,15 +76,15 @@ external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o: external/imnodes/CMakeFil
 external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o: /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp
 external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o: external/imnodes/CMakeFiles/imnodes.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o"
-	cd /Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o -MF CMakeFiles/imnodes.dir/imnodes.cpp.o.d -o CMakeFiles/imnodes.dir/imnodes.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp
+	cd /Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.o -MF CMakeFiles/imnodes.dir/imnodes.cpp.o.d -o CMakeFiles/imnodes.dir/imnodes.cpp.o -c /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp
 
 external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imnodes.dir/imnodes.cpp.i"
-	cd /Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp > CMakeFiles/imnodes.dir/imnodes.cpp.i
+	cd /Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp > CMakeFiles/imnodes.dir/imnodes.cpp.i
 
 external/imnodes/CMakeFiles/imnodes.dir/imnodes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imnodes.dir/imnodes.cpp.s"
-	cd /Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp -o CMakeFiles/imnodes.dir/imnodes.cpp.s
+	cd /Users/mukulgupta/Documents/GitHub/node-based-image-processor/build/external/imnodes && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mukulgupta/Documents/GitHub/node-based-image-processor/external/imnodes/imnodes.cpp -o CMakeFiles/imnodes.dir/imnodes.cpp.s
 
 # Object files for target imnodes
 imnodes_OBJECTS = \
